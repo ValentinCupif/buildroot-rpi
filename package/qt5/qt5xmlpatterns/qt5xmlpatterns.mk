@@ -4,9 +4,9 @@
 #
 #############################################################
 
-QT5XMLPATTERNS_VERSION = ce0f629b741f268d0546a775d9d8f4eec99d21d0
-QT5XMLPATTERNS_SITE = git://gitorious.org/qt/qtxmlpatterns.git
-QT5XMLPATTERNS_SITE_METHOD = git
+QT5XMLPATTERNS_VERSION = $(QT5_VERSION)
+QT5XMLPATTERNS_SITE = $(QT5_SITE)
+QT5XMLPATTERNS_SOURCE = qtxmlpatterns-opensource-src-$(QT5XMLPATTERNS_VERSION).tar.xz
 
 QT5XMLPATTERNS_DEPENDENCIES = qt5base
 

@@ -1,0 +1,14 @@
+--- a/tools/tools.pro	2013-06-05 16:49:41.496573010 +0200
++++ b/tools/tools.pro	2013-06-05 16:49:04.056575404 +0200
+@@ -1,8 +1,9 @@
+ TEMPLATE = subdirs
+-qtHaveModule(quick): SUBDIRS += qmlscene qmlplugindump
++#qtHaveModule(quick): SUBDIRS += qmlscene qmlplugindump
++qtHaveModule(quick): SUBDIRS += qmlplugindump
+ qtHaveModule(qmltest): SUBDIRS += qmltestrunner
+ SUBDIRS += \
+-    qmlmin \
+     qmlprofiler \
+     qmlbundle
++#    qmlmin \
+

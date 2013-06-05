@@ -4,9 +4,9 @@
 #
 #############################################################
 
-QT5JSBACKEND_VERSION = 30a8abf65e8fd08baaa972fb79af060043895215
-QT5JSBACKEND_SITE = git://gitorious.org/qt/qtjsbackend.git
-QT5JSBACKEND_SITE_METHOD = git
+QT5JSBACKEND_VERSION = $(QT5_VERSION)
+QT5JSBACKEND_SITE = $(QT5_SITE)
+QT5JSBACKEND_SOURCE = qtjsbackend-opensource-src-$(QT5JSBACKEND_VERSION).tar.xz
 
 QT5JSBACKEND_DEPENDENCIES = qt5base
 

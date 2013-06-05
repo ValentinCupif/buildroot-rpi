@@ -4,9 +4,9 @@
 #
 #############################################################
 
-QT5GRAPHICALEFFECTS_VERSION = 535c6978fdb11b58ba65873d0105b5e90219c5de
-QT5GRAPHICALEFFECTS_SITE = git://gitorious.org/qt/qtgraphicaleffects.git
-QT5GRAPHICALEFFECTS_SIT_METHOD = git
+QT5GRAPHICALEFFECTS_VERSION = $(QT5_VERSION)
+QT5GRAPHICALEFFECTS_SITE = $(QT5_SITE)
+QT5GRAPHICALEFFECTS_SOURCE = qtgraphicaleffects-opensource-src-$(QT5GRAPHICALEFFECTS_VERSION).tar.xz
 
 QT5GRAPHICALEFFECTS_DEPENDENCIES = qt5base qt5declarative
 
