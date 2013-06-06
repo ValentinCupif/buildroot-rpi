@@ -4,9 +4,14 @@
 #
 #############################################################
 
-QT5IMAGEFORMATS_VERSION = $(QT5_VERSION)
-QT5IMAGEFORMATS_SITE = $(QT5_SITE)
-QT5IMAGEFORMATS_SOURCE = qtimageformats-opensource-src-$(QT5IMAGEFORMATS_VERSION).tar.xz
+# Tuesday June 04 2013, release
+QT5IMAGEFORMATS_VERSION = 37257d4be0cab8d5a92db9566f89ac115645f81f
+QT5IMAGEFORMATS_SITE = git://gitorious.org/qt/qtimageformats.git
+QT5IMAGEFORMATS_SITE_METHOD = git
+
+#QT5IMAGEFORMATS_VERSION = $(QT5_VERSION)
+#QT5IMAGEFORMATS_SITE = $(QT5_SITE)
+#QT5IMAGEFORMATS_SOURCE = qtimageformats-opensource-src-$(QT5IMAGEFORMATS_VERSION).tar.xz
 
 QT5IMAGEFORMATS_DEPENDENCIES = qt5base
 
