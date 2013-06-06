@@ -4,9 +4,14 @@
 #
 #############################################################
 
-QT5MULTIMEDIA_VERSION = $(QT5_VERSION)
-QT5MULTIMEDIA_SITE = $(QT5_SITE)
-QT5MULTIMEDIA_SOURCE = qtmultimedia-opensource-src-$(QT5MULTIMEDIA_VERSION).tar.xz
+# Tuesday June 04 2013, release
+QT5MULTIMEDIA_VERSION = fca12620b1e14a5d2daf467f2f8c6eb96714e80a
+QT5MULTIMEDIA_SITE = git://gitorious.org/qt/qtmultimedia.git
+QT5MULTIMEDIA_SITE_METHOD = git
+
+#QT5MULTIMEDIA_VERSION = $(QT5_VERSION)
+#QT5MULTIMEDIA_SITE = $(QT5_SITE)
+#QT5MULTIMEDIA_SOURCE = qtmultimedia-opensource-src-$(QT5MULTIMEDIA_VERSION).tar.xz
 
 QT5MULTIMEDIA_DEPENDENCIES = qt5base qt5declarative
 
