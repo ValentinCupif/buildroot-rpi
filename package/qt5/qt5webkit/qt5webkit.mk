@@ -4,9 +4,14 @@
 #
 #############################################################
 
-QT5WEBKIT_VERSION = $(QT5_VERSION)
-QT5WEBKIT_SITE = $(QT5_SITE)
-QT5WEBKIT_SOURCE = qtwebkit-opensource-src-$(QT5WEBKIT_VERSION).tar.xz
+#Thursday June 06 2013
+QT5WEBKIT_VERSION = 50ccde81258f6d9f9147b8b1c52adb90db22cd3e
+QT5WEBKIT_SITE = git://gitorious.org/qt/qtwebkit.git
+QT5WEBKIT_SITE_METHOD = git
+
+#QT5WEBKIT_VERSION = $(QT5_VERSION)
+#QT5WEBKIT_SITE = $(QT5_SITE)
+#QT5WEBKIT_SOURCE = qtwebkit-opensource-src-$(QT5WEBKIT_VERSION).tar.xz
 
 QT5WEBKIT_DEPENDENCIES = qt5base qt5declarative sqlite host-ruby host-gperf
 
