@@ -4,9 +4,14 @@
 #
 #############################################################
 
-QT5BASE_VERSION = $(QT5_VERSION)
-QT5BASE_SITE = $(QT5_SITE)
-QT5BASE_SOURCE = qtbase-opensource-src-$(QT5BASE_VERSION).tar.xz
+# Thursday June 06 2013, release
+QT5BASE_VERSION = 04830dbcb2c1b92bd949ac7fd56d293b02e91fef
+QT5BASE_SITE = git://gitorious.org/qt/qtbase.git
+QT5BASE_SITE_METHOD = git
+
+#QT5BASE_VERSION = $(QT5_VERSION)
+#QT5BASE_SITE = $(QT5_SITE)
+#QT5BASE_SOURCE = qtbase-opensource-src-$(QT5BASE_VERSION).tar.xz
 
 QT5BASE_DEPENDENCIES = host-pkgconf zlib pcre
 
@@ -20,7 +25,6 @@ QT5BASE_INSTALL_STAGING = YES
 #  * -system-pcre because pcre is mandatory to build Qt, and we
 #    want to use the one packaged in Buildroot
 QT5BASE_CONFIGURE_OPTS += \
-	-wayland \
 	-optimized-qmake \
 	-no-qml-debug \
 	-no-kms \
