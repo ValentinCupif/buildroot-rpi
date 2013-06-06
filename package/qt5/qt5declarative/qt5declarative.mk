@@ -4,11 +4,14 @@
 #
 #############################################################
 
-QT5DECLARATIVE_VERSION = $(QT5_VERSION)
-QT5DECLARATIVE_SITE = $(QT5_SITE)
-QT5DECLARATIVE_SOURCE = qtdeclarative-opensource-src-$(QT5DECLARATIVE_VERSION).tar.xz
-QT5DECLARATIVE_DEPENDENCIES = qt5base qt5xmlpatterns qt5jsbackend
-QT5DECLARATIVE_INSTALL_STAGING = YES
+# Tuesday June 04 2013, release
+QT5DECLARATIVE_VERSION = 65a9318f8fbfe6e3c1f33675fea435a76b869870
+QT5DECLARATIVE_SITE = git://gitorious.org/qt/qtdeclarative.git
+QT5DECLARATIVE_SITE_METHOD = git
+
+#QT5DECLARATIVE_VERSION = $(QT5_VERSION)
+#QT5DECLARATIVE_SITE = $(QT5_SITE)
+#QT5DECLARATIVE_SOURCE = qtdeclarative-opensource-src-$(QT5DECLARATIVE_VERSION).tar.xz
 
 QT5DECLARATIVE_DEPENDENCIES = qt5base qt5xmlpatterns qt5jsbackend
 
