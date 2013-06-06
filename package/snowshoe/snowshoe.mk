@@ -4,6 +4,7 @@
 #
 #############################################################
 
+# Tuesday January 29 2013
 SNOWSHOE_VERSION=35afbe295043bd3e27357b8e987ec19b54bfd8c8
 SNOWSHOE_SITE_METHOD=git
 SNOWSHOE_SITE=https://git.gitorious.org/qt-apps/snowshoe.git
