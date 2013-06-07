@@ -1,0 +1,16 @@
+--- ./weston.ini	2013-06-07 12:02:57.411033643 +0200
++++ ./weston.ini	2013-06-07 12:04:15.611035642 +0200
+@@ -33,10 +33,10 @@
+ #icon=/usr/share/icons/gnome/24x24/apps/arts.png
+ #path=./clients/flower
+ 
+-[screensaver]
++#[screensaver]
+ # Uncomment path to disable screensaver
+-path=/usr/libexec/weston-screensaver
+-duration=600
++#path=/usr/libexec/weston-screensaver
++#duration=600
+ 
+ [input-method]
+ path=/usr/libexec/weston-keyboard
