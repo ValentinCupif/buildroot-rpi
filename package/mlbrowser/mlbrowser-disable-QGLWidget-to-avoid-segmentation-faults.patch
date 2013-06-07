@@ -1,0 +1,29 @@
+--- a/src/mlwebkit.cpp	2013-06-07 11:50:47.903016306 +0200
++++ b/src/mlwebkit.cpp	2013-06-07 11:51:08.495015511 +0200
+@@ -98,7 +98,7 @@
+ 	pWebview = new GraphicsWebView();
+ 
+ #ifdef QT_OPENGL_LIB
+-	pWidget = new QGLWidget();
++//	pWidget = new QGLWidget();
+ #endif
+ 	pPage =  new WebPage();
+ 
+@@ -115,7 +115,7 @@
+ 	}
+ 
+ #ifdef QT_OPENGL_LIB
+-	pWidget = new QGLWidget(pView);
++//	pWidget = new QGLWidget(pView);
+ #endif
+ 
+ #ifdef _INSPECTOR_
+@@ -125,7 +125,7 @@
+ #endif
+ 
+ #ifdef QT_OPENGL_LIB
+-	pView->setViewport(pWidget);
++//	pView->setViewport(pWidget);
+ #endif
+ 
+ 	// Configuration, settings and alike
