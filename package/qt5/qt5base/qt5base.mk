@@ -4,8 +4,10 @@
 #
 #############################################################
 
+# Wednesday June 12 2013, stable
+QT5BASE_VERSION = 0715dc9ee32054c4a344dc7d8694cf0b8b6cbdbb
 # Thursday June 06 2013, release
-QT5BASE_VERSION = 04830dbcb2c1b92bd949ac7fd56d293b02e91fef
+#QT5BASE_VERSION = 04830dbcb2c1b92bd949ac7fd56d293b02e91fef
 QT5BASE_SITE = git://gitorious.org/qt/qtbase.git
 QT5BASE_SITE_METHOD = git
 
