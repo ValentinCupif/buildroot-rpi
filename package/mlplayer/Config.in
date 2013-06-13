@@ -1,0 +1,5 @@
+config BR2_PACKAGE_MLPLAYER
+	bool "mlplayer"
+	help
+		Metrological's simple player (experiment)
+		http://www.metrological.com
