@@ -8,7 +8,7 @@ COGL_VERSION = 1.12.2
 COGL_SITE = http://ftp.gnome.org/pub/GNOME/sources/cogl/1.12/
 COGL_SOURCE=cogl-$(COGL_VERSION).tar.xz
 
-COGL_DEPENDENCIES = pango
+COGL_DEPENDENCIES = libglib2
 
 COGL_CONF_OPT =  \
 	--enable-gles1=no \
@@ -22,15 +22,6 @@ COGL_CONF_OPT =  \
 	--enable-cairo=no \
 	--enable-cogl-pango=no \
 	--enable-gdl-egl-platform=no
-
-define COGL_CONFIGURE_CMDS
-endef
-
-define COGL_BUILD_CMDS
-endef
-
-define COGL_INSTALL_TARGET_CMDS
-endef
 
 define COGL_UNINSTALL_TARGET_CMDS
 endef
