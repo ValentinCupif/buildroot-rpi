@@ -1,0 +1,5 @@
+config BR2_PACKAGE_COGL
+	bool cogl
+	select BR2_PACKAGE_PANGO
+	help
+	  A hardware accelerated 3D graphics API
