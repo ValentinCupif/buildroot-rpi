@@ -1,14 +1,5 @@
-[PATCH]: fix build on uClibc without IPv6 support
-
-Signed-off-by: Peter Korsgaard <jacmet@sunsite.dk>
----
- gio/ginetaddress.c |    9 +++++++++
- 1 file changed, 9 insertions(+)
-
-Index: glib-2.26.0/gio/ginetaddress.c
-===================================================================
---- glib-2.26.0.orig/gio/ginetaddress.c
-+++ glib-2.26.0/gio/ginetaddress.c
+--- a/gio/ginetaddress.c	2013-06-13 14:27:55.712481424 +0200
++++ b/gio/ginetaddress.c	2013-06-13 14:23:28.864486740 +0200
 @@ -21,6 +21,7 @@
   *          Samuel Cormier-Iijima <sciyoshi@gmail.com>
   */
@@ -17,7 +8,7 @@ Index: glib-2.26.0/gio/ginetaddress.c
  #include <config.h>
  
  #include <string.h>
-@@ -434,7 +435,11 @@
+@@ -435,7 +436,11 @@
    return NULL;
  }
  
@@ -29,7 +20,7 @@ Index: glib-2.26.0/gio/ginetaddress.c
  
  /**
   * g_inet_address_new_from_bytes:
-@@ -483,8 +488,10 @@
+@@ -484,8 +485,10 @@
  
        return g_inet_address_new_from_bytes (addr, family);
      }
@@ -40,7 +31,7 @@ Index: glib-2.26.0/gio/ginetaddress.c
  }
  
  /**
-@@ -510,8 +517,10 @@
+@@ -511,8 +512,10 @@
  
        return g_inet_address_new_from_bytes (addr, family);
      }
@@ -49,5 +40,4 @@ Index: glib-2.26.0/gio/ginetaddress.c
      return g_inet_address_new_from_bytes (in6addr_any.s6_addr, family);
 +#endif
  }
- 
- 
+

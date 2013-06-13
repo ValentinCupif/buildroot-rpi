@@ -3,8 +3,8 @@
 # libglib2
 #
 #############################################################
-LIBGLIB2_VERSION_MAJOR = 2.30
-LIBGLIB2_VERSION_MINOR = 3
+LIBGLIB2_VERSION_MAJOR = 2.32
+LIBGLIB2_VERSION_MINOR = 0
 LIBGLIB2_VERSION = $(LIBGLIB2_VERSION_MAJOR).$(LIBGLIB2_VERSION_MINOR)
 LIBGLIB2_SOURCE = glib-$(LIBGLIB2_VERSION).tar.xz
 LIBGLIB2_SITE = http://ftp.gnome.org/pub/gnome/sources/glib/$(LIBGLIB2_VERSION_MAJOR)
@@ -64,9 +64,9 @@ HOST_LIBGLIB2_CONF_OPT = \
 		--disable-dtrace \
 		--disable-systemtap \
 		--disable-gcov \
-		--disable-tests
+		--disable-modular-tests \
 
-LIBGLIB2_CONF_OPT += --disable-tests
+LIBGLIB2_CONF_OPT += --disable-modular-tests
 ifeq ($(BR2_TOOLCHAIN_HAS_THREADS),)
 	LIBGLIB2_CONF_OPT += --with-threads=none --disable-threads
 endif
