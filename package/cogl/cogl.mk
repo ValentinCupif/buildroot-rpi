@@ -4,8 +4,8 @@
 #
 #############################################################
 
-COGL_VERSION = 1.12.2
-COGL_SITE = http://ftp.gnome.org/pub/GNOME/sources/cogl/1.12/
+COGL_VERSION = 1.14.0
+COGL_SITE = http://ftp.gnome.org/pub/GNOME/sources/cogl/1.14/
 COGL_SOURCE=cogl-$(COGL_VERSION).tar.xz
 
 COGL_DEPENDENCIES = libglib2
