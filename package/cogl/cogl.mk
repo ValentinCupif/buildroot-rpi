@@ -23,7 +23,4 @@ COGL_CONF_OPT =  \
 	--enable-cogl-pango=no \
 	--enable-gdl-egl-platform=no
 
-define COGL_UNINSTALL_TARGET_CMDS
-endef
-
 $(eval $(autotools-package))
