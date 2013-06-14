@@ -1,0 +1,6 @@
+config BR2_PACKAGE_CLUTTER
+	bool cogl
+	select BR2_PACKAGE_COGL
+	select BR2_PACKAGE_ATK
+	help
+	  A software library for creating fast, compelling, portable, and dynamic graphical user interfaces
