@@ -3,9 +3,9 @@
 # fontconfig
 #
 #############################################################
-FONTCONFIG_VERSION = 2.6.0
+FONTCONFIG_VERSION = 2.10.93
 FONTCONFIG_SOURCE = fontconfig-$(FONTCONFIG_VERSION).tar.gz
-FONTCONFIG_SITE = http://fontconfig.org/release
+FONTCONFIG_SITE = http://www.freedesktop.org/software/fontconfig/release/
 FONTCONFIG_LICENSE = fontconfig license
 FONTCONFIG_LICENSE_FILES = COPYING
 FONTCONFIG_AUTORECONF = YES
