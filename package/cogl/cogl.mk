@@ -26,7 +26,6 @@ COGL_CONF_OPT =  \
 	--enable-gdl-egl-platform=no
 
 define COGL_POST_INSTALL_PKGCONFIG
-echo "MYDIR=$(@D)"
 	cp -f $(@D)/cogl/*.pc $(STAGING_DIR)/usr/lib/pkgconfig/                                                       
 #	cp -f $(@D)/cogl-pango/*.pc $(STAGING_DIR)/usr/lib/pkgconfig/                                                       
 	cp -f $(@D)/cogl-gles2/*.pc $(STAGING_DIR)/usr/lib/pkgconfig/                                                       
