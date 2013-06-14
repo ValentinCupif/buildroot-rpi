@@ -25,12 +25,19 @@ COGL_CONF_OPT =  \
 	--enable-cogl-pango=no \
 	--enable-gdl-egl-platform=no
 
-define COGL_POST_INSTALL_PKGCONFIG
-	cp -f $(@D)/cogl/*.pc $(STAGING_DIR)/usr/lib/pkgconfig/                                                       
-#	cp -f $(@D)/cogl-pango/*.pc $(STAGING_DIR)/usr/lib/pkgconfig/                                                       
-	cp -f $(@D)/cogl-gles2/*.pc $(STAGING_DIR)/usr/lib/pkgconfig/                                                       
+define COGL_POST_INSTALL_FILES
+	$(INSTALL) -m 755 -D $(@D)/cogl/*.pc $(STAGING_DIR)/usr/lib/pkgconfig/                                                       
+
+	$(INSTALL) -m 755 -D $(@D)/cogl-pango/*.pc $(STAGING_DIR)/usr/lib/pkgconfig/                                                       
+	$(INSTALL) -m 755 -D $(@D)/cogl-gles2/*.pc $(STAGING_DIR)/usr/lib/pkgconfig/                                                       
+
+	mkdir -p $(STAGING_DIR)/usr/include/cogl/ 
+	$(INSTALL) -m 755 -D $(@D)/cogl/*.h $(STAGING_DIR)/usr/include/cogl/ 
+
+	mkdir -p $(STAGING_DIR)/usr/include/cogl-pango/ 
+	$(INSTALL) -m 755 -D $(@D)/cogl-pango/*.h $(STAGING_DIR)/usr/include/cogl-pango/ 
 endef  
 
-COGL_POST_INSTALL_TARGET_HOOKS += COGL_POST_INSTALL_PKGCONFIG
+COGL_POST_INSTALL_TARGET_HOOKS += COGL_POST_INSTALL_FILES
 
 $(eval $(autotools-package))
