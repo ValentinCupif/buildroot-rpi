@@ -19,13 +19,12 @@ endef
 
 HARFBUZZ_POST_INSTALL_TARGET_HOOKS += HARFBUZZ_POST_INSTALL_PKGCONFIG
 
-define HARFBUZZ_POST_INSTALL_PKGCONFIG
-	cp -f $(@D)/src/*.pc $(STAGING_DIR)/usr/lib/pkgconfig/                                                       
-	cp -f $(@D)/src/*.h $(STAGING_DIR)/usr/include/                                                       
-	cp -f $(@D)/src/.libs/*.so $(STAGING_DIR)/usr/lib/                                                       
+define HARFBUZZ_POST_INSTALL_FILES
+	$(INSTALL) -m 755 -D $(@D)/src/*.pc $(STAGING_DIR)/usr/lib/pkgconfig/                                                       
+	$(INSTALL) -m 755 -D $(@D)/src/*.h $(STAGING_DIR)/usr/include/                                                       
+	$(INSTALL) -m 755 -D $(@D)/src/.libs/*.so $(STAGING_DIR)/usr/lib/                                                       
 endef  
 
-HARFBUZZ_POST_INSTALL_TARGET_HOOKS += HARFBUZZ_POST_INSTALL_PKGCONFIG
-
+HARFBUZZ_POST_INSTALL_TARGET_HOOKS += HARFBUZZ_POST_INSTALL_FILES
 
 $(eval $(autotools-package))
