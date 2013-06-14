@@ -4,8 +4,8 @@
 #
 #############################################################
 
-JSON_GLIB_MAJOR_VERSION = 0.14
-JSON_GLIB_MINOR_VERSION = 2
+JSON_GLIB_MAJOR_VERSION = 0.16
+JSON_GLIB_MINOR_VERSION = 0
 JSON_GLIB_VERSION = $(JSON_GLIB_MAJOR_VERSION).$(JSON_GLIB_MINOR_VERSION)
 JSON_GLIB_SITE = http://ftp.gnome.org/pub/GNOME/sources/json-glib/$(JSON_GLIB_MAJOR_VERSION)
 JSON_GLIB_SOURCE = json-glib-$(JSON_GLIB_VERSION).tar.xz
