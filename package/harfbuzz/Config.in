@@ -1,0 +1,6 @@
+config BR2_PACKAGE_HARFBUZZ
+	bool harfbuzz
+	select BR2_PACKAGE_CAIRO
+	select BR2_PACKAGE_FREETYPE
+	help
+	  HarfBuzz text shaping library
