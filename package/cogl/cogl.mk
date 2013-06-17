@@ -18,7 +18,6 @@ COGL_CONF_OPT =  \
 	--enable-glx=no \
 	--enable-gl=no \
 	--enable-wgl=no \
-	--enable-gdl-egl-platform=yes \
 	--enable-xlib-egl-platform=no \
 	--enable-gtk-doc-html=no \
 	--enable-cairo=no \
