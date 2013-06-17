@@ -1,0 +1,11 @@
+--- a/Source/WebCore/page/Settings.in	2013-06-17 18:53:57.272999582 +0200
++++ b/Source/WebCore/page/Settings.in	2013-06-17 18:54:22.373000660 +0200
+@@ -114,7 +114,7 @@
+ usePreHTML5ParserQuirks initial=false
+ hyperlinkAuditingEnabled initial=false
+ crossOriginCheckInGetMatchedCSSRulesDisabled initial=false
+-forceCompositingMode initial=false
++forceCompositingMode initial=true
+ shouldInjectUserScriptsInInitialEmptyDocument initial=false
+ fixedElementsLayoutRelativeToFrame initial=false
+ allowDisplayOfInsecureContent initial=true
