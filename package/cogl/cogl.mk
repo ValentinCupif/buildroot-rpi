@@ -22,8 +22,8 @@ COGL_CONF_OPT =  \
 	--enable-cairo=no \
 	--enable-gl=no \ 
 	--enable-gdl-egl-platform=no \
-	--enable-wayland-egl-platform=no \
-	--enable-wayland-egl-server=no 
+	--enable-wayland-egl-platform=yes \
+	--enable-wayland-egl-server=yes 
 
 ifeq ($(BR2_PACKAGE_PANGO), y)
 COGL_DEPENDENCIES += pango
