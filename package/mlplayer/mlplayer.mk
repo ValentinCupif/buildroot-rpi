@@ -4,9 +4,9 @@
 #
 #############################################################
 
-MLPLAYER_VERSION = 1.0
-MLPLAYER_SITE_METHOD = local
-MLPLAYER_SITE = $(TOPDIR)/package/mlplayer/src
+MLPLAYER_VERSION = 27e1d71ef78be51e13a006f85599d124f7442236
+MLPLAYER_SITE_METHOD = git
+MLPLAYER_SITE = https://github.com/msieben/mlplayer.git
 
 MLPLAYER_DEPENDENCIES = qt5multimedia 
 
@@ -15,7 +15,7 @@ define MLPLAYER_CONFIGURE_CMDS
                 $(TARGET_MAKE_ENV) \
                 $(HOST_DIR)/usr/bin/qmake \
 			DEFINES+=_VERBOSE_ \
-                        ./mlplayer.pro \
+                        ./src/mlplayer.pro \
         )
 endef
 
