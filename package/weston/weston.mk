@@ -24,15 +24,15 @@ WESTON_CONF_OPT = \
 	--disable-weston-launch \
 	--disable-colord \
 	--disable-resize-optimization \
-	--disable-libunwind
-#	--disable-egl \
+	--disable-libunwind \
+#	--disable-egl 
 
 ifeq ($(BR2_PACKAGE_RPI_USERLAND),y)
 WESTON_CONF_OPT += \
 	--with-cairo-glesv2 \
-	--disable-simple-egl-clients \
 	--enable-rpi-compositor \
-	WESTON_NATIVE_BACKEND="rpi-backend.so"
+	WESTON_NATIVE_BACKEND="rpi-backend.so" \
+	--disable-simple-egl-clients 
 WESTON_DEPENDENCIES += rpi-userland
 else
 WESTON_CONF_OPT += \
