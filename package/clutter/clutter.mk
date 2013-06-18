@@ -29,5 +29,4 @@ CLUTTER_CONF_OPT =  \
 	--disable-examples \
 	--disable-tests
 
-
 $(eval $(autotools-package))
