@@ -1,0 +1,4 @@
+config BR2_PACKAGE_WEBKIT_CLUTTER
+	bool "webkit-clutter"
+	help
+	  A Clutter port of webkit
