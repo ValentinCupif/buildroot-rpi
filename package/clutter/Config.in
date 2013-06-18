@@ -1,5 +1,5 @@
 config BR2_PACKAGE_CLUTTER
-	bool cogl
+	bool clutter
 	select BR2_PACKAGE_COGL
 	select BR2_PACKAGE_ATK
 	help
