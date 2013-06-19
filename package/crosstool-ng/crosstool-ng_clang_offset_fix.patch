@@ -1,0 +1,25 @@
+--- a/Makefile.in
++++ b/Makefile.in
+@@ -354,7 +354,7 @@
+ 	@echo "  INST    'kconfig/'"
+ 	@mkdir -p "$(DESTDIR)$(libdir)/kconfig"
+ 	@for f in $(KCONFIG_FILES); do                                      \
+-	    install "kconfig/$${f}" "$(DESTDIR)$(libdir)/kconfig/$${f}";    \
++            $(install) -D "kconfig/$${f}" "$(DESTDIR)$(libdir)/kconfig/$${f}"; \
+ 	 done
+ 
+ install-doc: $(DESTDIR)$(docdir)
+
+diff --git a/kconfig/zconf.gperf b/kconfig/zconf.gperf
+--- a/kconfig/zconf.gperf
++++ b/kconfig/zconf.gperf
+@@ -6,6 +6,9 @@
+ %enum
+ %pic
+ %struct-type
++%{
++#include <stddef.h>
++%}
+ 
+ struct kconf_id;
+
