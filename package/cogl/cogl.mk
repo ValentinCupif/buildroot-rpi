@@ -36,16 +36,16 @@ endif
 
 define COGL_POST_INSTALL_FILES
 	$(INSTALL) -m 755 -D $(@D)/cogl/*.pc $(STAGING_DIR)/usr/lib/pkgconfig/                                                       
-	$(INSTALL) -m 755 -D $(@D)/cogl-pango/*.pc $(STAGING_DIR)/usr/lib/pkgconfig/                                                       
 	mkdir -p $(STAGING_DIR)/usr/include/cogl/ 
 	$(INSTALL) -m 755 -D $(@D)/cogl/*.h $(STAGING_DIR)/usr/include/cogl/ 
 
+	$(INSTALL) -m 755 -D $(@D)/cogl-pango/*.pc $(STAGING_DIR)/usr/lib/pkgconfig/                                                       
 	mkdir -p $(STAGING_DIR)/usr/include/cogl-pango/ 
 	$(INSTALL) -m 755 -D $(@D)/cogl-pango/*.h $(STAGING_DIR)/usr/include/cogl-pango/ 
 
+	if [ -d "$(@D)/cogl-pango/.libs/" ]; then $(INSTALL) -m 755 -D $(@D)/cogl-pango/.libs/*.so* $(STAGING_DIR)/usr/lib/ ; fi;
 	$(INSTALL) -m 755 -D $(@D)/cogl/.libs/*.so* $(STAGING_DIR)/usr/lib/ 
 	$(INSTALL) -m 755 -D $(@D)/cogl-gles2/.libs/*.so* $(STAGING_DIR)/usr/lib/ 
-	$(INSTALL) -m 755 -D $(@D)/cogl-pango/.libs/*.so* $(STAGING_DIR)/usr/lib/ 
 endef
 
 
