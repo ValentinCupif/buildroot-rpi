@@ -30,8 +30,14 @@ COGL_DEPENDENCIES += pango
 COGL_CONF_OPT += \
 	--enable-cogl-pango=yes
 else
+ifeq ($(BR2_PACKAGE_CLUTTER), y) # to build cogl-pango for clutter
+COGL_DEPENDENCIES += pango
+COGL_CONF_OPT += \
+	--enable-cogl-pango=yes
+else
 COGL_CONF_OPT += \
 	--enable-cogl-pango=no 
+endif
 endif
 
 define COGL_POST_INSTALL_FILES
