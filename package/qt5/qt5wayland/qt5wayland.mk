@@ -1,4 +1,4 @@
-i# Tuesday April 23 2013
+# Tuesday April 23 2013
 QT5WAYLAND_VERSION = c2d41eee09a1c88641c6f866528c661728a0bf2f
 QT5WAYLAND_SITE = git://gitorious.org/qt/qtwayland.git
 QT5WAYLAND_SITE_METHOD = git
