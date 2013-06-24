@@ -4,8 +4,10 @@
 #
 #############################################################
 
+# Wednesday May 29 2013, stable
+QT5GRAPHICALEFFECTS_VERSION = c4254a0599ed104608cdc1a94561a9fda7db2918
 # Tuesday May 28 2013, release
-QT5GRAPHICALEFFECTS_VERSION = 535c6978fdb11b58ba65873d0105b5e90219c5de
+#QT5GRAPHICALEFFECTS_VERSION = 535c6978fdb11b58ba65873d0105b5e90219c5de
 QT5GRAPHICALEFFECTS_SITE = git://gitorious.org/qt/qtgraphicaleffects.git
 QT5GRAPHICALEFFECTS_SITE_METHOD = git
 
