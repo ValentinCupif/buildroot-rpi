@@ -4,8 +4,10 @@
 #
 #############################################################
 
+# Sunday June 16 201, stable
+QT5XMLPATTERNS_VERSION = 4674a1cdf9cb721c9306576a76d4fe2c6425fe51
 # Friday May 24 2013, release
-QT5XMLPATTERNS_VERSION = ce0f629b741f268d0546a775d9d8f4eec99d21d0
+#QT5XMLPATTERNS_VERSION = ce0f629b741f268d0546a775d9d8f4eec99d21d0
 QT5XMLPATTERNS_SITE = git://gitorious.org/qt/qtxmlpatterns.git
 QT5XMLPATTERNS_SITE_METHOD = git
 
