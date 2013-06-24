@@ -11,10 +11,6 @@ QT5BASE_VERSION = 0715dc9ee32054c4a344dc7d8694cf0b8b6cbdbb
 QT5BASE_SITE = git://gitorious.org/qt/qtbase.git
 QT5BASE_SITE_METHOD = git
 
-#QT5BASE_VERSION = $(QT5_VERSION)
-#QT5BASE_SITE = $(QT5_SITE)
-#QT5BASE_SOURCE = qtbase-opensource-src-$(QT5BASE_VERSION).tar.xz
-
 QT5BASE_DEPENDENCIES = host-pkgconf zlib pcre
 
 QT5BASE_INSTALL_STAGING = YES
@@ -199,7 +195,7 @@ define QT5BASE_CONFIGURE_CMDS
 		-sysroot $(STAGING_DIR) \
 		-plugindir /usr/lib/qt/plugins \
 		-no-rpath \
-		-nomake examples -nomake demos -nomake tests \
+		-nomake examples -nomake tests \
 		-device buildroot \
 		-no-c++11 \
 		$(QT5BASE_CONFIGURE_OPTS) \
