@@ -1,3 +1,5 @@
+# Tuesday June 11 2013, stable
+#QT5WAYLAND_VERSION = b8643f09f5a562af47b8b2fa9f65c9a74f11511c
 # Tuesday April 23 2013
 QT5WAYLAND_VERSION = c2d41eee09a1c88641c6f866528c661728a0bf2f
 QT5WAYLAND_SITE = git://gitorious.org/qt/qtwayland.git
