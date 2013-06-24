@@ -4,8 +4,10 @@
 #
 #############################################################
 
+# Friday May 31 2013, stable
+QT5JSBACKEND_VERSION = 6f2625e0e0e2818af6fdeb69528ada18556daef2
 # Friday May 31 2013, release
-QT5JSBACKEND_VERSION = 7d469e82e274d334c7d03d81b10d225c59d30798
+#QT5JSBACKEND_VERSION = 7d469e82e274d334c7d03d81b10d225c59d30798
 QT5JSBACKEND_SITE = git://gitorious.org/qt/qtjsbackend.git
 QT5JSBACKEND_SITE_METHOD = git
 
