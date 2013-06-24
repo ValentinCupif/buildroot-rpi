@@ -4,8 +4,10 @@
 #
 #############################################################
 
+# Wednesday June 19 2013, stable
+QT5WEBKIT_VERSION = 3b25694b613fe8b855a9aa7519645ed419e8e549
 #Thursday June 06 2013
-QT5WEBKIT_VERSION = 50ccde81258f6d9f9147b8b1c52adb90db22cd3e
+#QT5WEBKIT_VERSION = 50ccde81258f6d9f9147b8b1c52adb90db22cd3e
 QT5WEBKIT_SITE = git://gitorious.org/qt/qtwebkit.git
 QT5WEBKIT_SITE_METHOD = git
 
