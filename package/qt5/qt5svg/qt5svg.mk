@@ -4,8 +4,10 @@
 #
 #############################################################
 
+# Tuesday June 11 2013, stable
+QT5SVG_VERSION = 1ce9af6c1c32b20dedc33bd46cde5ee4b34a04c1
 # Tuesday May 28 2013, release
-QT5SVG_VERSION = 0b7bb2bd2d7404c42dd782975b665c9415409e0c
+#QT5SVG_VERSION = 0b7bb2bd2d7404c42dd782975b665c9415409e0c
 QT5SVG_SITE = git://gitorious.org/qt/qtsvg.git
 QT5SVG_SITE_METHOD = git
 
