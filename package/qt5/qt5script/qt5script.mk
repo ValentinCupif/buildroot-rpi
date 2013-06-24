@@ -4,8 +4,10 @@
 #
 #############################################################
 
+# Tuesday June 11 2013, stable
+QT5SCRIPT_VERSION = 184fc178f4c753727445694c4830c250f53da588
 # Tuesday May 28 2013, release
-QT5SCRIPT_VERSION = e2415c8b957a41345284f56d11cd276d5e4e9267
+#QT5SCRIPT_VERSION = e2415c8b957a41345284f56d11cd276d5e4e9267
 QT5SCRIPT_SITE = git://gitorious.org/qt/qtscript.git
 QT5SCRIPT_SITE_METHOD = git
 
