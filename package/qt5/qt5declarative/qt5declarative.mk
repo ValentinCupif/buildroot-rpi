@@ -4,8 +4,12 @@
 #
 #############################################################
 
+# Saturday June 22 2013, stable
+QT5DECLARATIVE_VERSION = 544978388f5106cada4bc0a836293ab2063a8beb
+# Thursday June 20 2013, stable
+#QT5DECLARATIVE_VERSION = e357f015391ac32e8d262b4ea2bd0e3fe1e87fe6
 # Tuesday June 04 2013, release
-QT5DECLARATIVE_VERSION = 65a9318f8fbfe6e3c1f33675fea435a76b869870
+#QT5DECLARATIVE_VERSION = 65a9318f8fbfe6e3c1f33675fea435a76b869870
 QT5DECLARATIVE_SITE = git://gitorious.org/qt/qtdeclarative.git
 QT5DECLARATIVE_SITE_METHOD = git
 
