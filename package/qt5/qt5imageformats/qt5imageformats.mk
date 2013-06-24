@@ -4,8 +4,10 @@
 #
 #############################################################
 
+# Wednesday June 12 2013, stable
+QT5IMAGEFORMATS_VERSION = a196fc62304ae23e68f60ae85a6106692f419f98
 # Tuesday June 04 2013, release
-QT5IMAGEFORMATS_VERSION = 37257d4be0cab8d5a92db9566f89ac115645f81f
+#QT5IMAGEFORMATS_VERSION = 37257d4be0cab8d5a92db9566f89ac115645f81f
 QT5IMAGEFORMATS_SITE = git://gitorious.org/qt/qtimageformats.git
 QT5IMAGEFORMATS_SITE_METHOD = git
 
