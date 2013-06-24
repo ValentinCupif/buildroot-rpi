@@ -4,8 +4,10 @@
 #
 #############################################################
 
+# Thursday June 20 2013, stable
+QT5MULTIMEDIA_VERSION = 17053a450b019bffe9b6040d221e9fc1e5c1968f
 # Tuesday June 04 2013, release
-QT5MULTIMEDIA_VERSION = fca12620b1e14a5d2daf467f2f8c6eb96714e80a
+#QT5MULTIMEDIA_VERSION = fca12620b1e14a5d2daf467f2f8c6eb96714e80a
 QT5MULTIMEDIA_SITE = git://gitorious.org/qt/qtmultimedia.git
 QT5MULTIMEDIA_SITE_METHOD = git
 
