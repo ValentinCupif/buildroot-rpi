@@ -4,8 +4,10 @@
 #
 #############################################################
 
+# Thursday June 20 2013, stable
+QT5QUICK1_VERSION = 573b316e3a86a113a951d0add1f5d17afec55f25
 # Tuesday May 28 2013, release
-QT5QUICK1_VERSION = dfe77c25412eedcfecfd738904c2714c53d1e3bb
+#QT5QUICK1_VERSION = dfe77c25412eedcfecfd738904c2714c53d1e3bb
 QT5QUICK1_SITE = git://gitorious.org/qt/qtquick1.git
 QT5QUICK1_SITE_METHOD = git
 
